@@ -32,10 +32,15 @@ body{
     color: white;
     border-radius: 8px;
 }
+.active{
+    border-bottom: 5px solid rebeccapurple;
+    border-radius: 8px;
+}
 
 #navbar ul li a:hover{
     font-weight: bold;
     color: rgba(233, 51, 163, 0.966);
+    border-bottom: 5px solid rebeccapurple;
 }
 
 #logo img{
