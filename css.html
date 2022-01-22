@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="prism.js"></script>
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title> Web Devlopers CheatSheet</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/img/logo.png" alt="MyOnlineMeal.com">
+            <p>Devlopers</p>
+        </div>
+        <ul>
+            <li class="item"><a href="/index.html">Home</a></li>
+            <li class="item"><a href="/html.html">Html</a></li>
+            <li class="item"><a href="#s">CSS</a></li>
+            <li class="item"><a href="/java.html">Java</a></li>
+            <li class="item"><a href="/mongo.html">Mongodb</a></li>
+        </ul>
+        
+    </nav>
+
+    <div id="sec1">
+        <img src="/img/s.png" alt="">
+        <h2>Welcome Coders</h2>
+    </div>
+    <div id="sec2">
+        <p>! Here is a every thing  which is you want !</p>
+        <p>! Cheatsheet of every coding language is available on this website !</p>
+
+    </div>
+    <hr>
+    <div class="com1">
+        <img id="cslogo" src="/img/csslogo.png" alt="">
+        <h1>CSS Cheatsheet</h1>
+    </div>
+    <div class="cm">
+        <div id="se1">
+            <ol>
+                <li>Syntax
+                    <pre class="language-css">
+<code>selector{
+property: value;
+property2: value2;
+}</code>
+                    </pre>
+                </li>
+                
+                <li>Include external css file
+                    <pre class="language-css">
+<code>&lt;link rel="stylesheet" type="text/css" href="/style.css" /></code>
+                    </pre>
+                </li>
+                
+                <li>Internal styles
+                    <pre class="language-css">
+<code><style type="text/css">
+div { color: #444;}
+</style></code>
+                    </pre>
+                </li>
+                
+                <li>Inline styles
+                    <pre class="language-css">
+<code>.clearfix:after {
+clear: both;
+content: " ";
+display: block;
+font-size: 0;
+height: 0;
+visibility: hidden;
+}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }</code>
+                    </pre>
+                </li>
+                
+                <li>Selectors
+                    <pre class="language-css">
+<code>div            all div tags
+div,p          all divs and paragraphs
+div p           paragraphs inside divs
+div &lt; pall p tags,             one level deep in div
+div + p           p tags immediately after div
+div ~p            p tags preceded by div
+.classname      all elements with class
+#idname         element with ID
+div.classname             divs with certain classname
+div #idname             div with certain ID
+#idname*          all elements inside #idname</code>
+                    </pre>
+                </li>
+                
+                <li>Media Queries
+                    <pre class="language-css">
+<code>@media not|only mediatype and (media feature) {
+CSS Code }
+Link external file:
+&lt;link rel="stylesheet" media=mediatype and|not|only (media feature href="mystylesheet.css"></code>
+                    </pre>
+                </li>
+                
+                <li>Viewport is 480 pixels or smaller
+                    <pre class="language-css">
+<code>@media screen and (max-width: 480px) { }</code>
+                    </pre>
+                </li>
+                
+                <li>Viewport width smaller OR height smaller
+                    <pre class="language-css">
+<code>@media screen and (max-width: 600px), (max-height: 500px) {}</code>
+                    </pre>
+                </li>
+                
+                <li> Print style
+                    <pre class="language-css">
+<code> @media print { ... }</code>
+                    </pre>
+                </li>
+                
+                <li>Night / dark mode
+                    <pre class="language-css">
+<code>@media (prefers-color-scheme: dark) { ... }</code>
+                    </pre>
+                </li>
+                
+                <li> Media types
+                    <pre class="language-css">
+<code>all, print, screen, speech</code>
+                    </pre>
+                </li>
+                
+                <li>To seat background img
+                    <pre class="language-css">
+<code>background: url();</code>
+                    </pre>
+                </li>
+                
+                <li>To seat background colour
+                    <pre class="language-css">
+<code>background-color: ;</code>
+                    </pre>
+                </li>
+                
+                <li>To set border
+                    <pre class="language-css">
+<code>border: 2px solid black;</code>
+                    </pre>
+                </li>
+                
+                <li> Box model
+                    <img src="/img/img2.png" alt="" id="cssimg">
+                </li>
+                
+            </ol>
+        </div>
+    </div>
+
+
+    <footer id="foot">
+            <hr>
+            <div id="con1">
+                Web Devlopers.com
+            </div>
+            <div id="con2">
+            © 2021 Proudly Powered by Swapnil Bankar Private Limited
+        </div>
+        <img src="img/footer.png" alt="">
+    </footer>
+
+
+</body>
+</html>
+

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="prism.js"></script>
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title> Web Devlopers CheatSheet</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/img/logo.png" alt="MyOnlineMeal.com">
+            <p>Devlopers</p>
+        </div>
+        <ul>
+            <li class="item"><a href="/index.html">Home</a></li>
+            <li class="item"><a href="/html.html">Html</a></li>
+            <li class="item"><a href="/css.html">CSS</a></li>
+            <li class="item"><a href="/java.html">Java</a></li>
+            <li class="item"><a href="#">Mongodb</a></li>
+        </ul>
+        
+    </nav>
+
+    <div id="sec1">
+        <img src="/img/s.png" alt="">
+        <h2>Welcome Coders</h2>
+    </div>
+    <div id="sec2">
+        <p>! Here is a every thing  which is you want !</p>
+        <p>! Cheatsheet of every coding language is available on this website !</p>
+
+    </div>
+    <hr>
+    <div class="com1">
+        <img id="monlogo" src="/img/mongologo.png" alt="">
+        <h1>Mongo Cheatsheet</h1>
+    </div>
+    <div class="cm">
+        <div id="se1">
+            <ol>
+                <li>Show All Databases
+                    <pre class="language-js">
+<code>show dbs</code>
+                    </pre>
+                </li>
+
+                <li>Show Current Database
+                    <pre class="language-js">
+<code>db</code>
+                    </pre>
+                </li>
+
+                <li>Create Or Switch Database
+                    <pre class="language-js">
+<code>use acme</code>
+                    </pre>
+                </li>
+
+                <li>Drop
+                    <pre class="language-js">
+<code>db.dropDatabase()</code>
+                    </pre>
+                </li>
+
+                <li>Create Collection
+                    <pre class="language-js">
+<code>db.createCollection('posts')</code>
+                    </pre>
+                </li>
+
+                <li>Show Collections
+                    <pre class="language-js">
+<code>show collections</code>
+                    </pre>
+                </li>
+
+                <li>Insert Row
+                    <pre class="language-js">
+<code>db.posts.insert({
+title: 'Post One',
+body: 'Body of post one',
+category: 'News',
+tags: ['news', 'events'],
+user: {
+  name: 'John Doe',
+  status: 'author'
+},
+date: Date()
+})</code>
+                    </pre>
+                </li>
+
+                <li>Insert Multiple Rows
+                    <pre class="language-js">
+<code>db.posts.insertMany([
+{ title: 'Post Two',
+body: 'Body of post two',
+category: 'Technology',
+date: Date()
+},
+{
+  title: 'Post Three',
+  body: 'Body of post three',
+  category: 'News',
+  date: Date()
+},
+{
+  title: 'Post Four',
+  body: 'Body of post three',
+  category: 'Entertainment',
+  date: Date()
+}
+])</code>
+                    </pre>
+                </li>
+
+                <li>Get All Rows
+                    <pre class="language-js">
+<code>db.posts.find()</code>
+                    </pre>
+                </li>
+
+                <li>Get All Rows Formatted
+                    <pre class="language-js">
+<code>db.posts.find().pretty()
+</code>
+                    </pre>
+                </li>
+
+                <li>Find Rows
+                    <pre class="language-js">
+<code>db.posts.find({ category: 'News' })</code>
+                    </pre>
+                </li>
+
+                <li>Find One Row
+                    <pre class="language-js">
+<code>db.posts.findOne({ category: 'News' })</code>
+                    </pre>
+                </li>
+
+                <li>Delete Row
+                    <pre class="language-js">
+<code>db.posts.remove({ title: 'Post Four' })</code>
+                    </pre>
+                </li>
+
+                <li>Add Index
+                    <pre class="language-js">
+<code>db.posts.createIndex({ title: 'text' })</code>
+                    </pre>
+                </li>
+
+                <li>Text Search
+                    <pre class="language-js">
+<code>db.posts.find({
+  $text: {
+    $search: "\"Post O\""
+    }
+})</code>
+                    </pre>
+                </li>
+
+                <li>Greater and Less Than
+                    <pre class="language-js">
+<code>db.posts.find({ views: { $gt: 2 } })
+db.posts.find({ views: { $gte: 7 } })
+db.posts.find({ views: { $lt: 7 } })
+db.posts.find({ views: { $lte: 7 } })</code>
+                    </pre>
+                </li>
+
+                <li>Rename Field
+                    <pre class="language-js">
+<code>db.posts.update({ title: 'Post Two' },
+{
+  $rename: {
+    likes: 'views'
+  }
+})</code>
+                    </pre>
+                </li>
+
+                <li>Find Specific Fields
+                    <pre class="language-js">
+<code>db.posts.find({ title: 'Post One' }, {
+  title: 1,
+  author: 1
+})</code>
+                    </pre>
+                </li>
+
+                <li>Chaining
+                    <pre class="language-js">
+<code>db.posts.find().limit(2).sort({ title: 1 }).pretty()</code>
+                    </pre>
+                </li>
+
+                <li>Count Rows
+                    <pre class="language-js">
+<code>db.posts.find().count()
+db.posts.find({ category: 'news' }).count()</code>
+                    </pre>
+                </li>
+
+
+                
+            </ol>
+        </div>
+    </div>
+
+
+    <footer id="foot">
+            <hr>
+            <div id="con1">
+                Web Devlopers.com
+            </div>
+            <div id="con2">
+            © 2021 Proudly Powered by Swapnil Bankar Private Limited
+        </div>
+        <img src="img/footer.png" alt="">
+    </footer>
+
+
+</body>
+</html>

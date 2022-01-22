@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="prism.js"></script>
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title> Web Devlopers CheatSheet</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/img/logo.png" alt="MyOnlineMeal.com">
+            <p>Devlopers</p>
+        </div>
+        <ul>
+            <li class="item"><a href="/index.html">Home</a></li>
+            <li class="item"><a href="/html.html">Html</a></li>
+            <li class="item"><a href="/css.html">CSS</a></li>
+            <li class="item"><a href="#">Java</a></li>
+            <li class="item"><a href="/mongo.html">Mongodb</a></li>
+        </ul>
+        
+    </nav>
+
+    <div id="sec1">
+        <img src="/img/s.png" alt="">
+        <h2>Welcome Coders</h2>
+    </div>
+    <div id="sec2">
+        <p>! Here is a every thing  which is you want !</p>
+        <p>! Cheatsheet of every coding language is available on this website !</p>
+
+    </div>
+    <hr>
+    <div class="com1">
+        <img id="jslogo" src="/img/jslogo.png" alt="">
+        <h1>Java Cheatsheet</h1>
+    </div>
+    <div class="cm">
+        <div id="se1">
+            <ol>
+                <li>On page script
+                    <pre class="language-js">
+<code>&lt;script type="text/javascript">  ...&lt;/script></code>
+                    </pre>
+                </li>
+
+                <li>Include external JS file
+                    <pre class="language-js">
+<code>&lt;script src="filename.js">&lt;/script></code>
+                    </pre>
+                </li>
+
+                <li>Delay - 1 second timeout
+                    <pre class="language-js">
+<code>setTimeout(function () {
+
+}, 1000);</code>
+                    </pre>
+                </li>
+
+                <li>Functions
+                    <pre class="language-js">
+<code>function addNumbers(a, b) {
+return a + b; ;
+}
+x = addNumbers(1, 2);</code>
+                    </pre>
+                </li>
+
+                <li>Edit DOM element
+                    <pre class="language-js">
+<code>document.getElementById("elementID").innerHTML = "Hello World!";</code>
+                    </pre>
+                </li>
+
+                <li>Output
+                    <pre class="language-js">
+<code>console.log(a); </code>
+                    </pre>
+                </li>
+
+                <li>Comments
+                    <pre class="language-js">
+<code>/* Multi line
+comment */
+// One line</code>
+                    </pre>
+                </li>
+
+                <li>For Loop
+                    <pre class="language-js">
+<code>for (var i = 0; i < 10; i++) {
+document.write(i + ": " + i*3 + "<br />");
+}</code>
+                    </pre>
+                </li>
+
+                <li>While Loop
+                    <pre class="language-js">
+<code>var i = 1;                      // initialize
+while (i < 100) {               // enters the cycle if statement is true
+i *= 2;                     // increment to avoid infinite loop
+document.write(i + ", ");   // output
+}</code>
+                    </pre>
+                </li>
+
+                <li>Do While Loop
+                    <pre class="language-js">
+<code>var i = 1;                      // initialize
+do {                            // enters cycle at least once
+i *= 2;                     // increment to avoid infinite loop
+document.write(i + ", ");   // output
+} while (i &lt; 100) </code>
+                    </pre>
+                </li>
+
+                <li>Break
+                    <pre class="language-js">
+<code>for (var i = 0; i < 10; i++) {
+if (i == 5) { break; }          // stops and exits the cycle
+document.write(i + ", ");       // last output number is 4
+}</code>
+                    </pre>
+                </li>
+
+                <li>Continue
+                    <pre class="language-js">
+<code>for (var i = 0; i < 10; i++) {
+if (i == 5) { continue; }       // skips the rest of the cycle
+document.write(i + ", ");       // skips 5
+}</code>
+                    </pre>
+                </li>
+
+                <li>If - Else
+                    <pre class="language-js">
+<code>if ((age >= 14) && (age < 19)) {        // logical condition
+status = "Eligible.";               // executed if condition is true
+} else {                                // else block is optional
+status = "Not eligible.";           // executed if condition is false
+}</code>
+                    </pre>
+                </li>
+
+                <li>Switch Statement
+                    <pre class="language-js">
+<code>switch (new Date().getDay()) {      // input is current day
+case 6:                         // if (day == 6)
+	text = "Saturday";          
+	break;
+case 0:                         // if (day == 0)
+	text = "Sunday";
+	break;
+default:                        // else...
+	text = "Whatever";
+} </code>
+                    </pre>
+                </li>
+
+                <li>Strict mode
+                    <pre class="language-js">
+<code>"use strict";   // Use strict mode to write secure code
+x = 1; </code>
+                    </pre>
+                </li>
+
+                <li>Values
+                    <pre class="language-js">
+<code>false, true                     // boolean
+18, 3.14, 0b10011, 0xF6, NaN    // number
+"flower", 'John'                // string
+undefined, null , Infinity      // special</code>
+                    </pre>
+                </li>
+
+                <li>Operators
+                    <pre class="language-js">
+<code>a = b + c - d;      // addition, substraction
+a = b * (c / d);    // multiplication, division
+x = 100 % 48;       // modulo. 100 / 48 remainder = 4
+a++; b--;           // postfix increment and decrement</code>
+                    </pre>
+                </li>
+
+                <li>Errors
+                    <pre class="language-js">
+<code>try {                           // block of code to try
+undefinedFunction();
+}
+catch(err) {                    // block to handle errors
+console.log(err.message);
+}</code>
+                    </pre>
+                </li>
+
+                <li>hrow error
+                    <pre class="language-js">
+<code>throw "My error message";    // throw a text</code>
+                    </pre>
+                </li>
+
+                <li>Input validation
+                    <pre class="language-js">
+<code>var x = document.getElementById("mynum").value; // get input value
+try { 
+if(x == "")  throw "empty";                 // error cases
+if(isNaN(x)) throw "not a number";
+x = Number(x);
+if(x > 10)   throw "too high";
+}
+catch(err) {                                    // if there's an error
+document.write("Input is " + err);          // output error
+console.error(err);                         // write the error in console
+}
+finally {
+document.write("</br />Done");              // executed regardless of the try / catch result
+}</code>
+                    </pre>
+                </li>
+
+                
+            </ol>
+        </div>
+    </div>
+
+
+    <footer id="foot">
+            <hr>
+            <div id="con1">
+                Web Devlopers.com
+            </div>
+            <div id="con2">
+            © 2021 Proudly Powered by Swapnil Bankar Private Limited
+        </div>
+        <img src="img/footer.png" alt="">
+    </footer>
+
+
+</body>
+</html>

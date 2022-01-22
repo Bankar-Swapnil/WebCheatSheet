@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+}
+
+h1{
+    padding: 20px;
+}
+
+.com1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.cm{
+    padding: 0px;
+    margin: auto;
+}
+
+ol{
+    padding-left: 0px;
+}
+
+
+#se1{
+    width: 75%;
+    margin: auto;
+}
+
+.toolbar-item button{
+    cursor: pointer !important;
+    color: white !important;
+    border: 1px solid white !important;
+    padding: 5px 14px !important;
+}
+
+#htmllogo{
+    width: 80px;
+    height: 65px;
+}
+
+#monlogo{
+    width:69px ;
+    height: 65px;
+}
+
+
+#cslogo{
+    width:59px ;
+    height: 65px;
+}
+
+#cssimg{
+    width: 70%;
+}
+
+#jslogo{
+    width: 74px;
+    height: 64px;
+    margin: 0px;
+}
